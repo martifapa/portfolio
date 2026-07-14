@@ -1,7 +1,7 @@
 :root {
-    --green-dark: #1f3c37;
-    --green-medium: #28382d;
-    --green-light: #445c46;
+    --green-dark: #003747;
+    --green-medium: #194B59;
+    --green-light: #466E7A;
     --orange-light: #f3900e;
     --orange-medium: #f8641e;
     --orange-dark: #ed4f05;
@@ -29,7 +29,7 @@ main {
 .sidebar {
     position: fixed;
     min-width: 360px;
-    width: 25vw;
+    width: 30vw;
     height: 100%;
     flex: 1 1 23%;
     padding: 50px 14px;
@@ -148,6 +148,7 @@ main {
 /* tech-stack section */
 .tech-stack {
     display: flex;
+    padding: 0 10px;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
@@ -220,7 +221,7 @@ main {
 
 .projects {
     max-height: 100vh;
-    margin-left: max(360px, 25vw);
+    margin-left: max(360px, 30vw);
     flex: auto;
     display: flex;
     flex-direction: column;
@@ -287,8 +288,8 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(325px, 400px));
     justify-content: center;
     align-content: flex-start;
-    gap: 30px;
-    padding: 8px 0;
+    gap: 40px 50px;
+    padding: 8px 20px;
     overflow-y: auto;
 }
 
