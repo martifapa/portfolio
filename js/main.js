@@ -1,15 +1,17 @@
 const technologies = {
+    'TypeScript': 'typescript.png',
     'JavaScript': 'javascript.png',
     'React': 'react.svg',
     'Redux': 'redux.svg',
     'Node': 'node.svg',
     'Express': 'expressjs.svg',
-    'TypeScript': 'typescript.png',
     'SQL': 'sql.png',
     'Postgres': 'postgres.png',
     'MongoDB': 'mongodb.png',
     'Python': 'python.png',
     'Django': 'django.png',
+    'FastAPI': 'fastapi.svg',
+    'Docker': 'docker.png',
 };
 
 const techStack = document.querySelector('.tech-stack');
@@ -146,45 +148,45 @@ const displayProjects = (projects) => {
         const projectLinksDiv = document.createElement('div');
         projectLinksDiv.classList.add('project-links');
 
-        const codeProjectLinkDiv = document.createElement('div');
-        codeProjectLinkDiv.classList.add('project-link');
+        const codeProjectButton = document.createElement('button');
+        codeProjectButton.classList.add('project-link');
         const code = document.createElement('a');
         if (project.code.length > 0) {
-            codeProjectLinkDiv.classList.add('enabled');
+            codeProjectButton.classList.add('enabled');
             code.href = project.code;
             code.target = '_blank';
             code.rel = 'noopener noreferrer';
         };
         code.textContent = 'CODE';
-        codeProjectLinkDiv.appendChild(code);
+        codeProjectButton.appendChild(code);
 
-        const linkProjectLinkDiv = document.createElement('div');
-        linkProjectLinkDiv.classList.add('project-link');
+        const linkProjectButton = document.createElement('button');
+        linkProjectButton.classList.add('project-link');
         const link = document.createElement('a');
         if (project.link.length > 0) {
-            linkProjectLinkDiv.classList.add('enabled');
+            linkProjectButton.classList.add('enabled');
             link.href = project.link;
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
         };
         link.textContent = 'LINK';
-        linkProjectLinkDiv.appendChild(link);
+        linkProjectButton.appendChild(link);
 
-        const stackProjectLinkDiv = document.createElement('div');
-        stackProjectLinkDiv.classList.add('project-link');
+        const stackProjectButton = document.createElement('button');
+        stackProjectButton.classList.add('project-link');
         if (project.stack.length > 0) {
-            stackProjectLinkDiv.classList.add('enabled');
+            stackProjectButton.classList.add('enabled');
         };
         const stack = document.createElement('p');
         stack.textContent = 'STACK';
-        stackProjectLinkDiv.appendChild(stack);
-        stackProjectLinkDiv.addEventListener('click', () =>
+        stackProjectButton.appendChild(stack);
+        stackProjectButton.addEventListener('click', () =>
             displayProjectStack(project)
         );
 
-        projectLinksDiv.appendChild(codeProjectLinkDiv);
-        projectLinksDiv.appendChild(linkProjectLinkDiv);
-        projectLinksDiv.appendChild(stackProjectLinkDiv);
+        projectLinksDiv.appendChild(codeProjectButton);
+        projectLinksDiv.appendChild(linkProjectButton);
+        projectLinksDiv.appendChild(stackProjectButton);
 
         projectDiv.appendChild(imgWrapper);
         projectDiv.appendChild(h3);
