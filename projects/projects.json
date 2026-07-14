@@ -22,7 +22,7 @@
             "code": "",
             "link": "https://abasil.es/",
             "hero": "dataDashboard.jpg",
-            "stack": ["TypeScript", "React", "Redux", "Node", "Expressjs", "ChartJs"]
+            "stack": ["TypeScript", "React", "Redux", "Node", "Expressjs", "ChartJs", "Docker"]
         },
         {
             "title": "GMAT buddy",
