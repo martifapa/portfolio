@@ -195,32 +195,32 @@ const displayProjects = (projects) => {
     });
 }
 
-const dropdownCurrentOption = document.querySelector('.selected-view');
-const toggleViewDropdown = () => {
-    dropdownContent.classList.toggle('active');
-}
+// const dropdownCurrentOption = document.querySelector('.selected-view');
+// const toggleViewDropdown = () => {
+//     dropdownContent.classList.toggle('active');
+// }
 
-const selectedViewText = document.querySelector('.selected-view');
-const setSelectedViewText = (text) => {
-    selectedViewText.textContent = text;
-}
-const dropdownContent = document.querySelector('.dropdown-content');
-dropdownCurrentOption.addEventListener('click', () => {
-    toggleViewDropdown();
-});
+// const selectedViewText = document.querySelector('.selected-view');
+// const setSelectedViewText = (text) => {
+//     selectedViewText.textContent = text;
+// }
+// const dropdownContent = document.querySelector('.dropdown-content');
+// dropdownCurrentOption.addEventListener('click', () => {
+//     toggleViewDropdown();
+// });
 
-const overlay = document.querySelector('.overlay');
+// const overlay = document.querySelector('.overlay');
 
-const standardView = document.querySelector('#standard-view');
-standardView.addEventListener('click', () =>{
-    overlay.classList.remove('active');
-    setSelectedViewText(standardView.textContent);
-    toggleViewDropdown();
-});
+// const standardView = document.querySelector('#standard-view');
+// standardView.addEventListener('click', () =>{
+//     overlay.classList.remove('active');
+//     setSelectedViewText(standardView.textContent);
+//     toggleViewDropdown();
+// });
 
-const recruitersView = document.querySelector('#recruiters-view');
-recruitersView.addEventListener('click', () =>{
-    overlay.classList.add('active');
-    setSelectedViewText(recruitersView.textContent);
-    toggleViewDropdown();
-});
+// const recruitersView = document.querySelector('#recruiters-view');
+// recruitersView.addEventListener('click', () =>{
+//     overlay.classList.add('active');
+//     setSelectedViewText(recruitersView.textContent);
+//     toggleViewDropdown();
+// });
